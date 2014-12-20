@@ -1,0 +1,28 @@
+import static org.junit.Assert.assertTrue;
+
+import java.io.IOException;
+
+import org.junit.Test;
+
+public class Admin_methodsTest {
+
+	@Test
+	public void updateBookTeset() throws NumberFormatException, IOException {
+		Admin_methods meo = new Admin_methods();
+		assertTrue(meo.updateBook(11)==true);
+	}
+	
+	@Test
+	public void deleteBookTeset() throws NumberFormatException, IOException {
+		Admin_methods meo = new Admin_methods();
+		assertTrue(meo.deleteBook(33)==true);
+	}
+	
+	@Test
+	public void addBookTest() throws NumberFormatException, IOException {
+		Admin_methods ad_methods = new Admin_methods();
+		assertTrue(ad_methods.addBook(0, "Harry Potter", "Joen Rowling", "PawPrints", 12, "O", "X")==true);
+		
+	}
+
+}

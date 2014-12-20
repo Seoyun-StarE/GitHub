@@ -10,7 +10,7 @@ public class Admin_BookAdd{
 
 	public Admin_BookAdd()throws IOException{
 		System.out.println("ISBN : ");
-		//int isbn = Integer.parseInt(in.readLine());	
+		//int isbn = Integer.parseInt(in.readLine());	a
 		String isbn=in.readLine();
 		//ISBN 중복 체크하고 사용 가능 여부 판단
 

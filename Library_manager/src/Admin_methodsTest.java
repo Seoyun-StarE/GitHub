@@ -18,5 +18,17 @@ public class Admin_methodsTest {
 		assertTrue(meo.deleteBook(33)==true);
 	}
 	
+	@Test
+	public void addBookTest() throws NumberFormatException, IOException {
+		Admin_methods ad_methods = new Admin_methods();
+		assertTrue(ad_methods.addBook(0, "Harry Potter", "Joen Rowling", "PawPrints", 12, "O", "X")==true);
+		
+	}
+	
+	@Test
+	public void delteBookTest() throws NumberFormatException, IOException {
+		Admin_methods ad_methods = new Admin_methods();
+		assertTrue(ad_methods.deleteBook(11)==true);
+	}
 
 }
